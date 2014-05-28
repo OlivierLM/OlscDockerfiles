@@ -1,0 +1,18 @@
+//
+// Do any local configuration here
+//
+
+// Consider adding the 1918 zones here, if they are not used in your
+// organization
+//include "/etc/bind/zones.rfc1918";
+
+acl "ns6.gandi.net" {
+        217.70.177.40;
+};
+
+zone "olsc.org" {
+     type master;
+     file "db.olsc.org";
+     allow-query { any; };
+     allow-transfer { ns6.gandi.net; };
+};
