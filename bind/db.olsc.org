@@ -1,6 +1,6 @@
 $TTL	604800
-@		IN	SOA	stark.olsc.org. olivier.olsc.org. (
-                                        2014052702      ; Serial
+@		IN	SOA	canton.olsc.org. olivier.olsc.org. (
+                                        2014053102      ; Serial
                                         60480           ; Refresh
                                         8640            ; Retry
                                         2419200         ; Expire
@@ -9,12 +9,12 @@ $TTL	604800
                 IN      NS      stark
                 IN      NS      ns6.gandi.net.
 		IN      MX      10 canton
-		IN      A       91.121.122.103
+		IN      A       198.245.62.141
 ;
-canton		IN      A       91.121.122.103
-www             IN	CNAME	olsc.org.
-mail		IN	CNAME	olsc.org.
-aiki-luc	IN	CNAME	olsc.org.
-aiki-douvres	IN	CNAME	olsc.org.
-poche		IN	CNAME	olsc.org.
 stark           IN      A       198.245.62.141
+canton		IN      A       91.121.122.103
+;
+www             IN	CNAME	stark
+aiki-luc	IN	CNAME	stark
+aiki-douvres	IN	CNAME	stark
+mail		IN	CNAME   canton
